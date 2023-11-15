@@ -99,6 +99,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="D:\Алгоритмы\Alg\build\ZERO_CHECK.vcxproj">
       <Project>{F0A1A6B7-BE31-337E-B97D-A28362D17CBA}</Project>
       <Name>ZERO_CHECK</Name>
@@ -108,6 +110,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="D:\Алгоритмы\Alg\build\MainProject\MainProject.vcxproj">
       <Project>{AA10A0BA-3509-3A90-8517-50B2E7142D6C}</Project>
       <Name>MainProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Алгоритмы\Alg\build\gtest\gtest.vcxproj">
+      <Project>{C8BA3B18-9C36-30EF-959C-3CEBE921A5BF}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Алгоритмы\Alg\build\test\test.vcxproj">
+      <Project>{80D64D85-8018-3877-B84D-65026635153F}</Project>
+      <Name>test</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

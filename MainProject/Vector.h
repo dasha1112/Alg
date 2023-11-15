@@ -9,7 +9,7 @@ class TVector
 {
 protected:
 	T* data;
-	int size; // размер вектора
+    int size; // размер вектора
 public:
 	TVector(const int s = 1); //конструктор
 	TVector(T* arr, int s); //конструктор
@@ -25,9 +25,13 @@ public:
 	TVector operator+ ( TVector<T>& p); // сложение
 	TVector operator- (TVector<T>& p); // вычитание
 	TVector operator* (TVector<T>& p); // скалярное произведение
-	TVector operator + (double a); //сложение с чилом
+
+	TVector operator + (double a); //сложение с чиcлом
+	TVector operator - (double a); //вычитание с чиcлом
+	TVector operator * (double a); //умножение с чиcлом
 	void Resize(int newsize = 0);
 	int Size();
+	void Random();
 	// ввод-вывод
 	template <class T1>
 	friend std :: ostream& operator<< (std :: ostream& ostr, const TVector<T1> &A);
@@ -232,6 +236,34 @@ TVector <T> TVector <T> :: operator + (double a) //сложение с числом
 	return b;
 }
 
+template <class T>
+TVector <T> TVector <T> :: operator - (double a) //вычитание с числом
+{
+	if (data != nullptr)
+	{
+		TVector <T> b(size);
+		for (int i = 0; i < size; i++)
+		{
+			b[i] = (*this)[i] - a;
+		}
+	}
+	return b;
+}
+
+template <class T>
+TVector <T> TVector <T> :: operator + (double a) //умножение с числом
+{
+	if (data != nullptr)
+	{
+		TVector <T> b(size);
+		for (int i = 0; i < size; i++)
+		{
+			b[i] = (*this)[i] * a;
+		}
+	}
+	return b;
+}
+
 
 template <class T1>
 std :: ostream& operator<< (std :: ostream& ostr, const TVector<T1>& A) //оператор вывода
@@ -283,6 +315,13 @@ void TVector<T>::Resize(int newSize)
 		data = newData; 
 		size = newSize;  
 	}
+}
+
+template<class T>
+inline void TVector<T>::Random()
+{
+	for (int i = 0; i < size; i++)
+		data[i] = rand();
 }
 
 #endif

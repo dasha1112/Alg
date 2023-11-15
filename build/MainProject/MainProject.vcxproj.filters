@@ -7,7 +7,7 @@
     <ClCompile Include="D:\Алгоритмы\Alg\MainProject\Vector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Алгоритмы\Alg\MainProject\main.cpp">
+    <ClCompile Include="D:\Алгоритмы\Alg\MainProject\_MatrixLabSample.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

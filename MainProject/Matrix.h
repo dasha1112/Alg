@@ -103,6 +103,7 @@ TMatrix <T> TMatrix <T> :: operator+ (double a)
 			res.data[i][i] += a;
 		}
 	}
+	return res;
 }
 template <class T>
 TMatrix <T> TMatrix <T> :: operator + (const TMatrix<T>& p) 

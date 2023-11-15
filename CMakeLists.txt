@@ -8,5 +8,7 @@ if(NOT CMAKE_BUILD_TYPE) # проверка имеющихся у компиля
   set(CMAKE_BUILD_TYPE Release) #Если нет то устанавливаем Release
 endif()
 
+add_subdirectory(gtest)
+add_subdirectory(test)
 add_subdirectory(MainProject) #Добавляем директорию с под-CMakeList-ом, и выполняем под-CMakeList
 

@@ -3,4 +3,6 @@
   <ItemGroup>
     <CustomBuild Include="D:\Алгоритмы\Alg\CMakeLists.txt" />
   </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
 </Project>
