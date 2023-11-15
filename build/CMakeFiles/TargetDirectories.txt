@@ -1,0 +1,5 @@
+D:/Алгоритмы/Alg/build/CMakeFiles/ALL_BUILD.dir
+D:/Алгоритмы/Alg/build/CMakeFiles/ZERO_CHECK.dir
+D:/Алгоритмы/Alg/build/gtest/CMakeFiles/gtest.dir
+D:/Алгоритмы/Alg/build/test/CMakeFiles/test.dir
+D:/Алгоритмы/Alg/build/MainProject/CMakeFiles/MainProject.dir

@@ -1,0 +1,10 @@
+^D:\АЛГОРИТМЫ\ALG\BUILD\CMAKEFILES\AB1BE544AB711A432AB4B5440F7CA626\GENERATE.STAMP.RULE
+setlocal
+D:\Downloads\bin\cmake.exe -SD:/Алгоритмы/Alg -BD:/Алгоритмы/Alg/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Алгоритмы/Alg/build/Test.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
